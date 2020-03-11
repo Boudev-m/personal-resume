@@ -1,0 +1,93 @@
+/********* Définition des polices personnalisées ***********/
+
+
+@font-face {
+    font-family: 'Acme';
+    src: url('Police/Acme.ttf') format('truetype');
+}
+
+
+/******** Styles globaux de la page par défaut ***********/
+
+h1, h2
+{
+    font-family: 'Righteous', 'Acme', Verdana, "Arial black", serif;
+}
+
+*
+{
+    font-family: Verdana, "Arial black", serif;
+}
+
+p, ul
+{
+
+    font-size: 1.3em;
+}
+
+body
+{
+    border: 1px solid;
+}
+
+/********** le Body ************/
+
+body
+{
+    margin: auto; /* élargit le body sur tt la fenètre */
+    display: flex; /* Main et Aside en ligne*/
+    flex-direction: row-reverse; /*inverse Main et Aside*/
+    max-width: 1000px;
+}
+
+/********** le Main ************/
+
+main
+{
+    flex: 3; /* main 4x + grand que aside */
+    padding-left: 50px;
+}
+
+
+/********** le Aside ***********/
+
+aside
+{
+    flex: 1;
+    background-color: rgb(196, 245, 253);
+    display: flex;
+    flex-direction: column;
+
+}
+
+aside header
+{
+    display: flex;
+}
+
+.photo
+{
+    margin: auto;
+}
+
+aside header img
+{
+    margin: auto;
+    border: 2px black solid;
+    border-radius: 100px;
+}
+
+aside h1
+{
+    color: rgb(196, 245, 253);
+    background-color: black;
+    font-size: 2em;
+    text-align: center;
+}
+
+aside footer
+{
+
+}
+
+/* 8 - Media Queries*/
