@@ -27,7 +27,7 @@ p, ul
 
 body
 {
-    border: 1px solid;
+
 }
 
 
@@ -96,6 +96,11 @@ aside footer
 
 }
 
+.hobby
+{
+
+}
+
 
 /********** le Main ************/
 
@@ -135,7 +140,6 @@ strong
 
 main section
 {
-    border: 1px solid;
     display: flex;
     flex-direction: column;
 }
@@ -150,14 +154,13 @@ main section h1
 
 main section p, main section h2
 {
-    margin: 0;
-    border: 1px solid;
+    margin-bottom: 0;
 }
 
 .big_bloc /*main section div*/
 {
     display: flex;
-    border: 1px solid;
+
 }
 
 .bloc /*main section div div/p/h2*/
@@ -165,22 +168,25 @@ main section p, main section h2
     flex: 1;
 }
 
-main footer
+.experience
 {
-    border: 1px solid;
+    padding-top: 30px;
+}
+
+.recommandation /*main footer*/
+{
+
 }
 
 main footer h1
 {
-    margin: 0;
-    border: 1px solid;
+
     border-bottom: 4px rgb(81, 226, 248) solid; /*decor*/
 }
 
 main footer p
 {
-    margin: 0;
-    border: 1px solid;
+    margin: 0 0 5px 0;
 }
 
 /* 8 - Media Queries*/
