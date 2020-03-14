@@ -93,12 +93,14 @@ aside p
 
 aside footer
 {
-
+    height: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
-.hobby
+.hobby /* icones */
 {
-
+    margin: auto;
 }
 
 
@@ -175,7 +177,7 @@ main section p, main section h2
 
 .recommandation /*main footer*/
 {
-
+    margin-bottom: 20px;
 }
 
 main footer h1
