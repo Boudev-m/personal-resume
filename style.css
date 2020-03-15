@@ -25,11 +25,6 @@ p, ul
     font-size: 1.3em;
 }
 
-body
-{
-
-}
-
 
 /********** le Body ************/
 
@@ -100,7 +95,10 @@ aside footer
 
 .hobby /* icones */
 {
-    margin: auto;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
@@ -193,7 +191,58 @@ main footer p
 
 /* 8 - Media Queries*/
 
-*
+@media screen and (max-width: 1015px)
 {
+
+body
+{
+    display: flex;
+    flex-direction: column;/* Main et Aside en colonne */
+}
+
+main
+{
+    padding: 0; /* retrait de marge */
+}
+
+main header, main h1
+{
+    text-align: center;
+}
+
+main header, aside header
+{
+    height: 200px; /* même height que header aside */
+}
+
+
+main section h1, main footer h1
+{
+    border: 4px rgb(196, 245, 253) solid;
+    background-color: rgb(196, 245, 253);
+}
+
+main div
+{
+    padding-left: 50px;
+}
+
+.contact
+{
+    display: flex;
+}
+
+.contact p
+{
+    flex: 1;
+}
+
+.hobby
+{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 }
