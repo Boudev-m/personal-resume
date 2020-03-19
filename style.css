@@ -1,23 +1,28 @@
 /********* Définition des polices personnalisées ***********/
 
 
-@font-face {
+@font-face
+{
     font-family: 'Acme';
     src: url('Police/Acme.ttf') format('truetype');
+    font-family: 'Righteous';
+    src: url('Police/Righteous.ttf') format('truetype');
 }
 
 
 /******** Styles globaux de la page par défaut ***********/
 
-h1
-{
-    font-family: 'Righteous', 'Acme', Verdana, "Arial black", serif;
-}
 
 *
 {
     font-family: Verdana, "Arial black", serif;
 }
+
+h1, strong
+{
+    font-family: 'Righteous', 'Acme', Verdana, "Arial black", serif;
+}
+
 
 p, ul
 {
@@ -80,9 +85,8 @@ aside h1
 aside p
 {
     word-wrap: break-word;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center
+    padding-left: 13px;
+    padding-right: 13px;
 }
 
 
@@ -189,11 +193,13 @@ main footer p
     margin: 0 0 5px 0;
 }
 
-/* 8 - Media Queries*/
 
-@media screen and (max-width: 1015px)
+
+
+/************** Media Queries ***************/
+
+@media screen and (max-width: 900px)
 {
-
 body
 {
     display: flex;
@@ -227,22 +233,40 @@ main div
     padding-left: 50px;
 }
 
+aside p
+{
+    text-align: center;
+}
+
 .contact
 {
-    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-
 .contact p
 {
-    flex: 1;
+    margin: 5px 0 5px 0;
 }
 
-.hobby
+}
+
+@media screen and (max-width: 590px)
 {
-    margin: 0;
-    height: 100%;
+
+.big_bloc
+{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.recommandation .big_bloc .bloc
+{
+    padding-left: 0;
+}
+
+.recommandation .big_bloc .bloc p
+{
+    padding-top: 10px;
 }
 
 }
