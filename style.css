@@ -1,8 +1,7 @@
 /********* Définition des polices personnalisées ***********/
 
 
-@font-face
-{
+@font-face {
     font-family: 'Acme';
     src: url('Police/Acme.ttf') format('truetype');
     font-family: 'Righteous';
@@ -13,31 +12,25 @@
 /******** Styles globaux de la page par défaut ***********/
 
 
-*
-{
+* {
     font-family: Verdana, "Arial black", serif;
 }
 
-h1, strong
-{
+h1,
+strong {
     font-family: 'Righteous', 'Acme', Verdana, "Arial black", serif;
-}
-
-
-p, ul
-{
-
-    font-size: 1.3em;
 }
 
 
 /********** le Body ************/
 
-body
-{
-    margin: auto; /* élargit le body sur tt la fenètre */
-    display: flex; /* Main et Aside en ligne*/
-    flex-direction: row-reverse; /*inverse Main et Aside*/
+body {
+    margin: auto;
+    /* élargit le body sur tt la fenètre */
+    display: flex;
+    /* Main et Aside en ligne*/
+    flex-direction: row-reverse;
+    /*inverse Main et Aside*/
     max-width: 1000px;
 }
 
@@ -45,36 +38,32 @@ body
 
 /********** le Aside ***********/
 
-aside
-{
+aside {
     background-color: rgb(196, 245, 253);
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-aside header
-{
+aside header {
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-aside h1
-{
-    margin: 0;  /* Attention aux élmts qui ont naturellement des marges ext*/
+aside h1 {
+    margin: 0;
+    /* Attention aux élmts qui ont naturellement des marges ext*/
 }
 
-aside header img
-{
+aside header img {
     margin: auto;
     border: 2px black solid;
     border-radius: 100px;
 }
 
-aside h1
-{
+aside h1 {
     color: rgb(196, 245, 253);
     background-color: black;
     font-size: 2em;
@@ -82,69 +71,69 @@ aside h1
     word-wrap: break-word;
 }
 
-aside p
-{
+aside p {
     word-wrap: break-word;
     padding-left: 13px;
     padding-right: 13px;
+    font-size: 1.1em;
 }
 
+aside ul {
+    padding-left: 25px;
+    font-size: 1.1em;
+}
 
-aside footer
-{
+aside footer {
     height: 150px;
     display: flex;
     flex-direction: column;
 }
 
-.hobby /* icones */
-{
+.hobby {
     margin: 0;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
+.hobby img {
+    padding: 10px;
+}
 
 /********** le Main ************/
 
-main
-{
-    flex: 2.5; /* main 2,5X + grand que aside */
+main {
+    flex: 2.5;
+    /* main 2,5X + grand que aside */
     padding-left: 50px;
 }
 
-main header
-{
-    height: 300px; /* même height que header aside */
-    display: flex; /* pour centrer le titre horizontalement*/
+main header {
+    height: 300px;
+    /* même height que header aside */
+    display: flex;
+    /* pour centrer le titre horizontalement*/
     flex-direction: column;
     justify-content: center;
 }
 
-main header h1
-{
+main header h1 {
     font-size: 3em;
     margin: 0;
-    /* margin: 100px 0 0 0;  (permet de centrer sans flex)*/
-    
 }
 
-main header p
-{
-    font-size: 1.6em;
+main header p {
+    font-size: 1.85em;
     margin: 0;
     font-style: italic;
 }
 
-strong
-{
+strong {
     color: rgb(81, 226, 248);
     text-decoration: 3px underline;
 }
 
-main section
-{
+main section {
     display: flex;
     flex-direction: column;
 }
@@ -154,138 +143,147 @@ main section h1 {
     padding-bottom: 10px;
     margin: 0;
     font-size: 2em;
-    border-bottom: 4px rgb(81, 226, 248) solid; /*decor*/
+    border-bottom: 4px rgb(81, 226, 248) solid;
+    /*decor*/
 }
+
 .icon {
     width: 40px;
     margin-right: 20px;
 }
-.icon1 {            /*book*/
+
+.icon1 {
+    /*book*/
     width: 45px;
 }
 
-
-main section p, main section h2
-{
-    margin-bottom: 0;
+main section p,
+main section h2,
+footer p {
+    margin: 0;
+    font-size: 1.3em;
 }
 
-.big_bloc /*main section div*/
-{
+.big_bloc {
     display: flex;
-
+    padding: 10px 0;
 }
 
-.bloc /*main section div div/p/h2*/
-{
+.bloc-date {
+    flex: 2;
+}
+
+.bloc-description {
+    flex: 3;
+}
+
+.bloc-recommandation {
     flex: 1;
 }
 
-.experience
-{
-    padding-top: 30px;
-}
-
-.recommandation /*main footer*/
-{
-    padding-top: 30px;
-    margin-bottom: 20px;
-}
-
-main footer h1
-{
+main footer h1 {
     margin: 0;
     padding-bottom: 10px;
     font-size: 2em;
-    border-bottom: 4px rgb(81, 226, 248) solid; /*decor*/
+    border-bottom: 4px rgb(81, 226, 248) solid;
 }
 
-main footer p
-{
-    margin: 15px 0 5px 0;
+main footer p {
+    margin: 0;
+    padding: 10px 0;
 }
-
-
 
 
 /************** Media Queries ***************/
 
-@media screen and (max-width: 900px)
-{
-body
-{
-    display: flex;
-    flex-direction: column;/* Main et Aside en colonne */
+@media screen and (max-width: 900px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        /* Main et Aside en colonne */
+    }
+
+    main {
+        padding-left: 0;
+        /* retrait de marge gauche */
+    }
+
+    main header,
+    main h1 {
+        text-align: center;
+    }
+
+    main header,
+    aside header {
+        height: 200px;
+        /* même height que header aside */
+    }
+
+    main section h1,
+    main footer h1 {
+        border: 4px rgb(196, 245, 253) solid;
+        background-color: rgb(196, 245, 253);
+    }
+
+    main section>div,
+    footer>div {
+        text-align: center;
+        margin: 0 30px;
+        /* border: 1px solid; */
+    }
+
+    .bloc-date {
+        flex: 2;
+    }
+
+    .bloc-description {
+        flex: 3;
+    }
+
+    aside p,
+    aside ul {
+        text-align: center;
+    }
+
+    .contact {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .contact p {
+        margin: 5px 0 5px 0;
+    }
+
 }
 
-main
-{
-    padding: 0; /* retrait de marge */
-}
+@media screen and (max-width: 590px) {
+    main * {
+        text-align: center;
+    }
 
-main header, main h1
-{
-    text-align: center;
-}
+    main div>div {
+        margin-right: 0px;
+    }
 
-main header, aside header
-{
-    height: 200px; /* même height que header aside */
-}
+    main section h1,
+    main footer h1 {
+        padding: 0;
+    }
 
+    .big_bloc {
+        flex-direction: column;
+    }
 
-main section h1, main footer h1
-{
-    border: 4px rgb(196, 245, 253) solid;
-    background-color: rgb(196, 245, 253);
-}
+    .recommandation .big_bloc .bloc {
+        padding-left: 0;
+    }
 
-main div
-{
-    padding-left: 50px;
-}
+    .recommandation .big_bloc .bloc p {
+        padding-top: 10px;
+    }
 
-aside p
-{
-    text-align: center;
-}
-
-.contact
-{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.contact p
-{
-    margin: 5px 0 5px 0;
-}
-
-}
-
-@media screen and (max-width: 590px)
-{
-
-main section h1, main footer h1 {
-    padding: 0;
-}
-
-.big_bloc
-{
-    display: flex;
-    flex-direction: column;
-}
-
-.recommandation .big_bloc .bloc
-{
-    padding-left: 0;
-}
-
-.recommandation .big_bloc .bloc p
-{
-    padding-top: 10px;
-}
-
-.icon {
-    display: none;
-}
+    .icon {
+        display: none;
+    }
 }
