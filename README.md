@@ -1,3 +1,9 @@
-# Projet n°2 Openclassrooms
+## Création du CV sous forme d'une page web.
+  
+Lien vers la page web :
+``https://bouimust.github.io/CV_pageweb`` 
+  
+Langages utilisés :
+``HTML / CSS`` 
 
-# Création du CV et publication en ligne
+Utilisation de flexbox et des media queries pour le design responsiv.
