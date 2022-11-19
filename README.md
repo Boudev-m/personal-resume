@@ -1,7 +1,7 @@
 ## Création du CV sous forme d'une page web.
   
-Lien vers la page web :
-``https://bouimust.github.io/CV_pageweb`` 
+Lien vers mon CV :
+https://bouimust.github.io/CV_pageweb
   
 Langages utilisés :
 ``HTML / CSS`` 
