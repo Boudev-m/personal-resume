@@ -1,8 +1,8 @@
-## Création du CV sous forme d'une page web.
+## CV en page web
   
-Lien vers mon CV : https://bouimust.github.io/CV_pageweb
+**Lien vers mon CV : https://bouimust.github.io/personal-resume**
   
-Langages utilisés :
+**Langages utilisés :**
 ``HTML / CSS`` 
 
 Utilisation de flexbox et des media queries pour le design responsiv.
