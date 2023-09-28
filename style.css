@@ -43,7 +43,7 @@ body {
 /********** le Aside ***********/
 
 aside {
-    background-color: rgb(196, 245, 253);
+    background-color: #d8dcff;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -70,16 +70,32 @@ aside h1 {
 
 aside header img {
     margin: auto;
-    border: 2px black solid;
+    border: 1px black solid;
     border-radius: 100px;
 }
 
 aside h1 {
-    color: rgb(196, 245, 253);
+    color: #d8dcff;
     background-color: black;
     font-size: 1.5em;
     text-align: center;
     word-wrap: break-word;
+}
+
+.buttons {
+    text-align: center;
+    padding: 17px 0;
+}
+
+.buttons button {
+    background-color: rgb(194, 201, 255);
+    cursor: pointer;
+    padding: 8px;
+}
+
+.buttons img {
+    width: 20px;
+    vertical-align: text-top;
 }
 
 aside p {
@@ -142,7 +158,7 @@ main header p {
 }
 
 strong {
-    color: rgb(81, 226, 248);
+    color: #d8dcff;
     text-decoration: 3px underline;
 }
 
@@ -157,13 +173,14 @@ main section h1 {
     padding: 0px;
     margin: 0;
     font-size: 1.5em;
-    border-bottom: 4px rgb(81, 226, 248) solid;
+    border-bottom: 4px #d8dcff solid;
     vertical-align: top;
 }
 
 .icon {
     width: 35px;
     margin-right: 20px;
+    vertical-align: sub;
 }
 
 main section p,
@@ -233,8 +250,8 @@ main footer p {
 
     main section h1,
     main footer h1 {
-        border: 4px rgb(196, 245, 253) solid;
-        background-color: rgb(196, 245, 253);
+        border: 4px #d8dcff solid;
+        background-color: #d8dcff;
     }
 
     main section>div,
@@ -254,11 +271,13 @@ main footer p {
 
     aside header {
         min-height: 230px;
+        margin: 10px 0;
     }
 
     aside p,
     aside ul {
         text-align: center;
+        list-style-type: none;
     }
 
 }
