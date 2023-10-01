@@ -50,7 +50,7 @@ aside {
 }
 
 aside header {
-    min-height: 300px;
+    min-height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,12 +66,6 @@ aside header p {
 aside h1 {
     margin: 0;
     /* Attention aux élmts qui ont naturellement des marges ext*/
-}
-
-aside header img {
-    margin: auto;
-    border: 1px black solid;
-    border-radius: 100px;
 }
 
 aside h1 {
@@ -138,7 +132,7 @@ main {
 }
 
 main header {
-    min-height: 290px;
+    min-height: 240px;
     /* même height que header aside */
     display: flex;
     /* pour centrer le titre horizontalement*/
@@ -270,7 +264,7 @@ main footer p {
     }
 
     aside header {
-        min-height: 230px;
+        min-height: 110px;
         margin: 10px 0;
     }
 
