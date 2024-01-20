@@ -111,7 +111,7 @@ aside footer {
 }
 
 .hobby {
-    margin: 0;
+    margin: 5px 0;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -119,7 +119,8 @@ aside footer {
 
 .hobby img {
     padding: 10px;
-    width: 60px;
+    width: 50px;
+    height: fit-content;
 }
 
 /********** le Main ************/
