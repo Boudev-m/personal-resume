@@ -1,8 +1,8 @@
-## CV en page web
+## Personal resume on web page
   
-**Lien vers mon CV : https://bouimust.github.io/personal-resume**
+**Link : https://bouimust.github.io/personal-resume**
   
-**Langages utilisés :**
+**Languages / tools used :**
 ``HTML / CSS`` 
 
-Utilisation de flexbox et des media queries pour le design responsiv.
+Using flexbox and media queries for responsiv

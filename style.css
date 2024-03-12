@@ -105,7 +105,6 @@ aside ul {
 }
 
 aside footer {
-    height: 150px;
     display: flex;
     flex-direction: column;
 }
